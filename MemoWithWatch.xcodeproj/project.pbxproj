@@ -1,0 +1,639 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		660B57E12A65447D00793C2A /* MemoWithWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660B57E02A65447D00793C2A /* MemoWithWatchApp.swift */; };
+		660B57E32A65447D00793C2A /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660B57E22A65447D00793C2A /* Persistence.swift */; };
+		660B57E62A65447D00793C2A /* MemoWithWatch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 660B57E42A65447D00793C2A /* MemoWithWatch.xcdatamodeld */; };
+		660B57EA2A65447F00793C2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 660B57E92A65447F00793C2A /* Assets.xcassets */; };
+		660B57EE2A65447F00793C2A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 660B57ED2A65447F00793C2A /* Preview Assets.xcassets */; };
+		660B57F52A673BC400793C2A /* MainListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660B57F42A673BC400793C2A /* MainListView.swift */; };
+		660B57F92A673C2600793C2A /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660B57F82A673C2600793C2A /* Memo.swift */; };
+		660B57FB2A673C9200793C2A /* MemoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660B57FA2A673C9200793C2A /* MemoStore.swift */; };
+		66DD33E72A674BA50080A9F2 /* ComposeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DD33E62A674BA50080A9F2 /* ComposeView.swift */; };
+		66DD33E92A67518E0080A9F2 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DD33E82A67518E0080A9F2 /* DetailView.swift */; };
+		66DD33F12A677B910080A9F2 /* MemoWithWatchWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DD33F02A677B910080A9F2 /* MemoWithWatchWatchApp.swift */; };
+		66DD33F52A677B920080A9F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66DD33F42A677B920080A9F2 /* Assets.xcassets */; };
+		66DD33F82A677B920080A9F2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66DD33F72A677B920080A9F2 /* Preview Assets.xcassets */; };
+		66DD33FB2A677B920080A9F2 /* MemoWithWatchWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 66DD33EE2A677B910080A9F2 /* MemoWithWatchWatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		66DD34052A677C6B0080A9F2 /* MemoW.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DD34042A677C6B0080A9F2 /* MemoW.swift */; };
+		66DD34072A677C950080A9F2 /* MemoStoreW.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DD34062A677C950080A9F2 /* MemoStoreW.swift */; };
+		66DD340B2A677D050080A9F2 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DD340A2A677D050080A9F2 /* MainView.swift */; };
+		66DD340D2A677D720080A9F2 /* MemoRecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DD340C2A677D720080A9F2 /* MemoRecordView.swift */; };
+		66DD340F2A677D7F0080A9F2 /* MemoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DD340E2A677D7F0080A9F2 /* MemoListView.swift */; };
+		66DD34132A677E3D0080A9F2 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DD34122A677E3D0080A9F2 /* DetailView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		66DD33F92A677B920080A9F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 660B57D52A65447D00793C2A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66DD33ED2A677B910080A9F2;
+			remoteInfo = "MemoWithWatchWatch Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		66DD33FF2A677B920080A9F2 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				66DD33FB2A677B920080A9F2 /* MemoWithWatchWatch Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		660B57DD2A65447D00793C2A /* MemoWithWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoWithWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		660B57E02A65447D00793C2A /* MemoWithWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoWithWatchApp.swift; sourceTree = "<group>"; };
+		660B57E22A65447D00793C2A /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		660B57E52A65447D00793C2A /* MemoWithWatch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MemoWithWatch.xcdatamodel; sourceTree = "<group>"; };
+		660B57E92A65447F00793C2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		660B57EB2A65447F00793C2A /* MemoWithWatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MemoWithWatch.entitlements; sourceTree = "<group>"; };
+		660B57ED2A65447F00793C2A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		660B57F42A673BC400793C2A /* MainListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListView.swift; sourceTree = "<group>"; };
+		660B57F82A673C2600793C2A /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
+		660B57FA2A673C9200793C2A /* MemoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoStore.swift; sourceTree = "<group>"; };
+		66DD33E62A674BA50080A9F2 /* ComposeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeView.swift; sourceTree = "<group>"; };
+		66DD33E82A67518E0080A9F2 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		66DD33EE2A677B910080A9F2 /* MemoWithWatchWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MemoWithWatchWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		66DD33F02A677B910080A9F2 /* MemoWithWatchWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoWithWatchWatchApp.swift; sourceTree = "<group>"; };
+		66DD33F42A677B920080A9F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		66DD33F72A677B920080A9F2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		66DD34042A677C6B0080A9F2 /* MemoW.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoW.swift; sourceTree = "<group>"; };
+		66DD34062A677C950080A9F2 /* MemoStoreW.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoStoreW.swift; sourceTree = "<group>"; };
+		66DD340A2A677D050080A9F2 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		66DD340C2A677D720080A9F2 /* MemoRecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoRecordView.swift; sourceTree = "<group>"; };
+		66DD340E2A677D7F0080A9F2 /* MemoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListView.swift; sourceTree = "<group>"; };
+		66DD34122A677E3D0080A9F2 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		660B57DA2A65447D00793C2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66DD33EB2A677B910080A9F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		660B57D42A65447D00793C2A = {
+			isa = PBXGroup;
+			children = (
+				660B57DF2A65447D00793C2A /* MemoWithWatch */,
+				66DD33EF2A677B910080A9F2 /* MemoWithWatchWatch Watch App */,
+				660B57DE2A65447D00793C2A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		660B57DE2A65447D00793C2A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				660B57DD2A65447D00793C2A /* MemoWithWatch.app */,
+				66DD33EE2A677B910080A9F2 /* MemoWithWatchWatch Watch App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		660B57DF2A65447D00793C2A /* MemoWithWatch */ = {
+			isa = PBXGroup;
+			children = (
+				66DD33E52A674B8D0080A9F2 /* View */,
+				660B57F72A673BFC00793C2A /* Memory */,
+				660B57F62A673BE500793C2A /* CoreData */,
+				660B57E02A65447D00793C2A /* MemoWithWatchApp.swift */,
+				660B57E92A65447F00793C2A /* Assets.xcassets */,
+				660B57EB2A65447F00793C2A /* MemoWithWatch.entitlements */,
+				660B57EC2A65447F00793C2A /* Preview Content */,
+			);
+			path = MemoWithWatch;
+			sourceTree = "<group>";
+		};
+		660B57EC2A65447F00793C2A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				660B57ED2A65447F00793C2A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		660B57F62A673BE500793C2A /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				660B57E22A65447D00793C2A /* Persistence.swift */,
+				660B57E42A65447D00793C2A /* MemoWithWatch.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		660B57F72A673BFC00793C2A /* Memory */ = {
+			isa = PBXGroup;
+			children = (
+				660B57F82A673C2600793C2A /* Memo.swift */,
+				660B57FA2A673C9200793C2A /* MemoStore.swift */,
+			);
+			path = Memory;
+			sourceTree = "<group>";
+		};
+		66DD33E52A674B8D0080A9F2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				660B57F42A673BC400793C2A /* MainListView.swift */,
+				66DD33E62A674BA50080A9F2 /* ComposeView.swift */,
+				66DD33E82A67518E0080A9F2 /* DetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		66DD33EF2A677B910080A9F2 /* MemoWithWatchWatch Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				66DD34092A677CEE0080A9F2 /* Memory */,
+				66DD34082A677CE10080A9F2 /* View */,
+				66DD33F02A677B910080A9F2 /* MemoWithWatchWatchApp.swift */,
+				66DD33F42A677B920080A9F2 /* Assets.xcassets */,
+				66DD33F62A677B920080A9F2 /* Preview Content */,
+			);
+			path = "MemoWithWatchWatch Watch App";
+			sourceTree = "<group>";
+		};
+		66DD33F62A677B920080A9F2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				66DD33F72A677B920080A9F2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		66DD34082A677CE10080A9F2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				66DD340A2A677D050080A9F2 /* MainView.swift */,
+				66DD340C2A677D720080A9F2 /* MemoRecordView.swift */,
+				66DD340E2A677D7F0080A9F2 /* MemoListView.swift */,
+				66DD34122A677E3D0080A9F2 /* DetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		66DD34092A677CEE0080A9F2 /* Memory */ = {
+			isa = PBXGroup;
+			children = (
+				66DD34042A677C6B0080A9F2 /* MemoW.swift */,
+				66DD34062A677C950080A9F2 /* MemoStoreW.swift */,
+			);
+			path = Memory;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		660B57DC2A65447D00793C2A /* MemoWithWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 660B57F12A65447F00793C2A /* Build configuration list for PBXNativeTarget "MemoWithWatch" */;
+			buildPhases = (
+				660B57D92A65447D00793C2A /* Sources */,
+				660B57DA2A65447D00793C2A /* Frameworks */,
+				660B57DB2A65447D00793C2A /* Resources */,
+				66DD33FF2A677B920080A9F2 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				66DD33FA2A677B920080A9F2 /* PBXTargetDependency */,
+			);
+			name = MemoWithWatch;
+			productName = MemoWithWatch;
+			productReference = 660B57DD2A65447D00793C2A /* MemoWithWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		66DD33ED2A677B910080A9F2 /* MemoWithWatchWatch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66DD33FC2A677B920080A9F2 /* Build configuration list for PBXNativeTarget "MemoWithWatchWatch Watch App" */;
+			buildPhases = (
+				66DD33EA2A677B910080A9F2 /* Sources */,
+				66DD33EB2A677B910080A9F2 /* Frameworks */,
+				66DD33EC2A677B910080A9F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MemoWithWatchWatch Watch App";
+			productName = "MemoWithWatchWatch Watch App";
+			productReference = 66DD33EE2A677B910080A9F2 /* MemoWithWatchWatch Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		660B57D52A65447D00793C2A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					660B57DC2A65447D00793C2A = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					66DD33ED2A677B910080A9F2 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 660B57D82A65447D00793C2A /* Build configuration list for PBXProject "MemoWithWatch" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 660B57D42A65447D00793C2A;
+			productRefGroup = 660B57DE2A65447D00793C2A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				660B57DC2A65447D00793C2A /* MemoWithWatch */,
+				66DD33ED2A677B910080A9F2 /* MemoWithWatchWatch Watch App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		660B57DB2A65447D00793C2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				660B57EE2A65447F00793C2A /* Preview Assets.xcassets in Resources */,
+				660B57EA2A65447F00793C2A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66DD33EC2A677B910080A9F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66DD33F82A677B920080A9F2 /* Preview Assets.xcassets in Resources */,
+				66DD33F52A677B920080A9F2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		660B57D92A65447D00793C2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				660B57F52A673BC400793C2A /* MainListView.swift in Sources */,
+				66DD33E92A67518E0080A9F2 /* DetailView.swift in Sources */,
+				660B57E12A65447D00793C2A /* MemoWithWatchApp.swift in Sources */,
+				660B57E62A65447D00793C2A /* MemoWithWatch.xcdatamodeld in Sources */,
+				660B57F92A673C2600793C2A /* Memo.swift in Sources */,
+				660B57FB2A673C9200793C2A /* MemoStore.swift in Sources */,
+				66DD33E72A674BA50080A9F2 /* ComposeView.swift in Sources */,
+				660B57E32A65447D00793C2A /* Persistence.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66DD33EA2A677B910080A9F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66DD34132A677E3D0080A9F2 /* DetailView.swift in Sources */,
+				66DD34072A677C950080A9F2 /* MemoStoreW.swift in Sources */,
+				66DD33F12A677B910080A9F2 /* MemoWithWatchWatchApp.swift in Sources */,
+				66DD340B2A677D050080A9F2 /* MainView.swift in Sources */,
+				66DD340F2A677D7F0080A9F2 /* MemoListView.swift in Sources */,
+				66DD34052A677C6B0080A9F2 /* MemoW.swift in Sources */,
+				66DD340D2A677D720080A9F2 /* MemoRecordView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		66DD33FA2A677B920080A9F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66DD33ED2A677B910080A9F2 /* MemoWithWatchWatch Watch App */;
+			targetProxy = 66DD33F92A677B920080A9F2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		660B57EF2A65447F00793C2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		660B57F02A65447F00793C2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		660B57F22A65447F00793C2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MemoWithWatch/MemoWithWatch.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MemoWithWatch/Preview Content\"";
+				DEVELOPMENT_TEAM = 386W4DPD42;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.apple.MemoWithWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		660B57F32A65447F00793C2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MemoWithWatch/MemoWithWatch.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MemoWithWatch/Preview Content\"";
+				DEVELOPMENT_TEAM = 386W4DPD42;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.apple.MemoWithWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		66DD33FD2A677B920080A9F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MemoWithWatchWatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 386W4DPD42;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = MemoWithWatchWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.apple.MemoWithWatch;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.apple.MemoWithWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Debug;
+		};
+		66DD33FE2A677B920080A9F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MemoWithWatchWatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 386W4DPD42;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = MemoWithWatchWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.apple.MemoWithWatch;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.apple.MemoWithWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		660B57D82A65447D00793C2A /* Build configuration list for PBXProject "MemoWithWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				660B57EF2A65447F00793C2A /* Debug */,
+				660B57F02A65447F00793C2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		660B57F12A65447F00793C2A /* Build configuration list for PBXNativeTarget "MemoWithWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				660B57F22A65447F00793C2A /* Debug */,
+				660B57F32A65447F00793C2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66DD33FC2A677B920080A9F2 /* Build configuration list for PBXNativeTarget "MemoWithWatchWatch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66DD33FD2A677B920080A9F2 /* Debug */,
+				66DD33FE2A677B920080A9F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		660B57E42A65447D00793C2A /* MemoWithWatch.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				660B57E52A65447D00793C2A /* MemoWithWatch.xcdatamodel */,
+			);
+			currentVersion = 660B57E52A65447D00793C2A /* MemoWithWatch.xcdatamodel */;
+			path = MemoWithWatch.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 660B57D52A65447D00793C2A /* Project object */;
+}
