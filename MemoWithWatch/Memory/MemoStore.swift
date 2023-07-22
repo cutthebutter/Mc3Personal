@@ -9,6 +9,13 @@ import Foundation
 import WatchConnectivity
 
 class MemoStore : NSObject, WCSessionDelegate,ObservableObject {
+    
+    static let shared = MemoStore()
+    @Published var path : [Memo] = []
+    
+    func navigateToMain() {
+        path = []
+    }
         
     var recieveMemo : [String : Any]
     @Published var list : [Memo]

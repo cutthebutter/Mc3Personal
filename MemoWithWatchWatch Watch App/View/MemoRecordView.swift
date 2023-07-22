@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MemoRecordView: View {
-    @EnvironmentObject var store : MemoStoreW
+    @EnvironmentObject var store : MemoStore
     @State private var content : String = ""
     @State var wathchToiOSMemo : [String : Any] = ["a" : "b"]
     
@@ -47,8 +47,9 @@ struct MemoRecordView: View {
         let root = WKExtension.shared().rootInterfaceController
         root?.presentTextInputController(withSuggestions: nil, allowedInputMode: .plain) { result in
             if let result = result as? [String], !result.isEmpty {
-                let memo = MemoW(content: result[0])
-                if result[0] != "" {
+                let result0 = result[0].replacingOccurrences(of: " ", with: "")
+                if result0 != ""{
+                    let memo = Memo(content: result[0])
                     store.memoList.insert(memo, at: 0)
                     wathchToiOSMemo = ["id" : memo.id.uuidString,
                                            "content" : memo.content,
@@ -70,6 +71,6 @@ struct MemoRecordView: View {
 struct MemoRecordView_Previews: PreviewProvider {
     static var previews: some View {
         MemoRecordView()
-            .environmentObject(MemoStoreW())
+            .environmentObject(MemoStore())
     }
 }

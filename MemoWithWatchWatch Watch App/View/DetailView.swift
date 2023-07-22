@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct DetailView: View {
-    @EnvironmentObject var store : MemoStoreW
-    @ObservedObject var memo : MemoW
+    @EnvironmentObject var store : MemoStore
+    @ObservedObject var memo : Memo
     var body: some View {
         VStack{
             ScrollView{
@@ -34,7 +34,7 @@ struct DetailView: View {
 }
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailView(memo: MemoW(content: "hi"))
-            .environmentObject(MemoStoreW())
+        DetailView(memo: Memo(content: "hi"))
+            .environmentObject(MemoStore())
     }
 }

@@ -9,7 +9,7 @@ import SwiftUI
 
 @main
 struct MemoWithWatchWatch_Watch_AppApp: App {
-    @StateObject var store = MemoStoreW()
+    @StateObject var store = MemoStore()
     var body: some Scene {
         WindowGroup {
             MainView()

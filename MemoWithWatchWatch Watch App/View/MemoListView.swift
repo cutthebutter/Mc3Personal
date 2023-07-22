@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MemoListView: View {
-    @EnvironmentObject var store : MemoStoreW
+    @EnvironmentObject var store : MemoStore
 
     var body: some View {
         NavigationView{
@@ -34,6 +34,6 @@ struct MemoListView: View {
 struct MemoListView_Previews: PreviewProvider {
     static var previews: some View {
         MemoListView()
-            .environmentObject(MemoStoreW())
+            .environmentObject(MemoStore())
     }
 }

@@ -9,17 +9,23 @@ import Foundation
 import SwiftUI
 import WatchConnectivity
 
-class MemoStoreW : NSObject, WCSessionDelegate, ObservableObject {
+class MemoStore : NSObject, WCSessionDelegate, ObservableObject {
     
+    static let shared = MemoStore()
+    @Published var path : [Memo] = []
+    
+    func navigateToMain() {
+        path = []
+    }
     
     var recieveMemo : [String : Any]
-    @Published var memoList: [MemoW]
+    @Published var memoList: [Memo]
     var session : WCSession
     
     init(session:WCSession = .default){
         memoList = [
-            MemoW(content: "hi"),
-            MemoW(content: "hi2")
+            Memo(content: "hi"),
+            Memo(content: "hi2")
         ]
         
         self.session = session
@@ -32,7 +38,7 @@ class MemoStoreW : NSObject, WCSessionDelegate, ObservableObject {
     }
 
     func insert(memo: String) {
-        memoList.insert(MemoW(content: memo), at : 0)
+        memoList.insert(Memo(content: memo), at : 0)
     }
     
     func session(_ session : WCSession, activationDidCompleteWith activationState : WCSessionActivationState, error : Error?){
@@ -43,7 +49,7 @@ class MemoStoreW : NSObject, WCSessionDelegate, ObservableObject {
         DispatchQueue.main.async {
             print("Received message: \(message)")
             self.recieveMemo = message["iOSToWatch"] as? [String:Any] ?? ["id": UUID().uuidString, "content" : "nullContents2", "insertDate" : Int(Date().timeIntervalSince1970)]
-            let newMemo = MemoW(id : UUID(uuidString: self.recieveMemo["id"] as! String)!,
+            let newMemo = Memo(id : UUID(uuidString: self.recieveMemo["id"] as! String)!,
                                 content: self.recieveMemo["content"] as! String,
                                 insertDate: Date(timeIntervalSince1970: Double(self.recieveMemo["insertDate"] as! Int)))
             print("Adding memo: \(newMemo)")

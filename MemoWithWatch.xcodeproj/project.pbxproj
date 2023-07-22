@@ -15,14 +15,18 @@
 		660B57F52A673BC400793C2A /* MainListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660B57F42A673BC400793C2A /* MainListView.swift */; };
 		660B57F92A673C2600793C2A /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660B57F82A673C2600793C2A /* Memo.swift */; };
 		660B57FB2A673C9200793C2A /* MemoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660B57FA2A673C9200793C2A /* MemoStore.swift */; };
+		6611F3032A695CF900555EE0 /* OpenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6611F2FC2A69560E00555EE0 /* OpenApp.swift */; };
+		6611F3042A695E6E00555EE0 /* OpenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6611F2FC2A69560E00555EE0 /* OpenApp.swift */; };
+		6611F3072A6BF13500555EE0 /* OpenMemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6611F3062A6BF13500555EE0 /* OpenMemo.swift */; };
+		6611F3082A6C017C00555EE0 /* OpenMemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6611F3062A6BF13500555EE0 /* OpenMemo.swift */; };
 		66DD33E72A674BA50080A9F2 /* ComposeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DD33E62A674BA50080A9F2 /* ComposeView.swift */; };
 		66DD33E92A67518E0080A9F2 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DD33E82A67518E0080A9F2 /* DetailView.swift */; };
 		66DD33F12A677B910080A9F2 /* MemoWithWatchWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DD33F02A677B910080A9F2 /* MemoWithWatchWatchApp.swift */; };
 		66DD33F52A677B920080A9F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66DD33F42A677B920080A9F2 /* Assets.xcassets */; };
 		66DD33F82A677B920080A9F2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66DD33F72A677B920080A9F2 /* Preview Assets.xcassets */; };
 		66DD33FB2A677B920080A9F2 /* MemoWithWatchWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 66DD33EE2A677B910080A9F2 /* MemoWithWatchWatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		66DD34052A677C6B0080A9F2 /* MemoW.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DD34042A677C6B0080A9F2 /* MemoW.swift */; };
-		66DD34072A677C950080A9F2 /* MemoStoreW.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DD34062A677C950080A9F2 /* MemoStoreW.swift */; };
+		66DD34052A677C6B0080A9F2 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DD34042A677C6B0080A9F2 /* Memo.swift */; };
+		66DD34072A677C950080A9F2 /* MemoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DD34062A677C950080A9F2 /* MemoStore.swift */; };
 		66DD340B2A677D050080A9F2 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DD340A2A677D050080A9F2 /* MainView.swift */; };
 		66DD340D2A677D720080A9F2 /* MemoRecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DD340C2A677D720080A9F2 /* MemoRecordView.swift */; };
 		66DD340F2A677D7F0080A9F2 /* MemoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DD340E2A677D7F0080A9F2 /* MemoListView.swift */; };
@@ -40,6 +44,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		6611F2F22A69082E00555EE0 /* Embed ExtensionKit Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed ExtensionKit Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		66DD33FF2A677B920080A9F2 /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -64,14 +78,16 @@
 		660B57F42A673BC400793C2A /* MainListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListView.swift; sourceTree = "<group>"; };
 		660B57F82A673C2600793C2A /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
 		660B57FA2A673C9200793C2A /* MemoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoStore.swift; sourceTree = "<group>"; };
+		6611F2FC2A69560E00555EE0 /* OpenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenApp.swift; sourceTree = "<group>"; };
+		6611F3062A6BF13500555EE0 /* OpenMemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenMemo.swift; sourceTree = "<group>"; };
 		66DD33E62A674BA50080A9F2 /* ComposeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeView.swift; sourceTree = "<group>"; };
 		66DD33E82A67518E0080A9F2 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		66DD33EE2A677B910080A9F2 /* MemoWithWatchWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MemoWithWatchWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		66DD33F02A677B910080A9F2 /* MemoWithWatchWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoWithWatchWatchApp.swift; sourceTree = "<group>"; };
 		66DD33F42A677B920080A9F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66DD33F72A677B920080A9F2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		66DD34042A677C6B0080A9F2 /* MemoW.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoW.swift; sourceTree = "<group>"; };
-		66DD34062A677C950080A9F2 /* MemoStoreW.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoStoreW.swift; sourceTree = "<group>"; };
+		66DD34042A677C6B0080A9F2 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
+		66DD34062A677C950080A9F2 /* MemoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoStore.swift; sourceTree = "<group>"; };
 		66DD340A2A677D050080A9F2 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		66DD340C2A677D720080A9F2 /* MemoRecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoRecordView.swift; sourceTree = "<group>"; };
 		66DD340E2A677D7F0080A9F2 /* MemoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListView.swift; sourceTree = "<group>"; };
@@ -117,6 +133,7 @@
 		660B57DF2A65447D00793C2A /* MemoWithWatch */ = {
 			isa = PBXGroup;
 			children = (
+				6611F3052A6961FA00555EE0 /* AppIntent */,
 				66DD33E52A674B8D0080A9F2 /* View */,
 				660B57F72A673BFC00793C2A /* Memory */,
 				660B57F62A673BE500793C2A /* CoreData */,
@@ -152,6 +169,15 @@
 				660B57FA2A673C9200793C2A /* MemoStore.swift */,
 			);
 			path = Memory;
+			sourceTree = "<group>";
+		};
+		6611F3052A6961FA00555EE0 /* AppIntent */ = {
+			isa = PBXGroup;
+			children = (
+				6611F2FC2A69560E00555EE0 /* OpenApp.swift */,
+				6611F3062A6BF13500555EE0 /* OpenMemo.swift */,
+			);
+			path = AppIntent;
 			sourceTree = "<group>";
 		};
 		66DD33E52A674B8D0080A9F2 /* View */ = {
@@ -198,8 +224,8 @@
 		66DD34092A677CEE0080A9F2 /* Memory */ = {
 			isa = PBXGroup;
 			children = (
-				66DD34042A677C6B0080A9F2 /* MemoW.swift */,
-				66DD34062A677C950080A9F2 /* MemoStoreW.swift */,
+				66DD34042A677C6B0080A9F2 /* Memo.swift */,
+				66DD34062A677C950080A9F2 /* MemoStore.swift */,
 			);
 			path = Memory;
 			sourceTree = "<group>";
@@ -215,6 +241,7 @@
 				660B57DA2A65447D00793C2A /* Frameworks */,
 				660B57DB2A65447D00793C2A /* Resources */,
 				66DD33FF2A677B920080A9F2 /* Embed Watch Content */,
+				6611F2F22A69082E00555EE0 /* Embed ExtensionKit Extensions */,
 			);
 			buildRules = (
 			);
@@ -311,8 +338,10 @@
 				660B57E12A65447D00793C2A /* MemoWithWatchApp.swift in Sources */,
 				660B57E62A65447D00793C2A /* MemoWithWatch.xcdatamodeld in Sources */,
 				660B57F92A673C2600793C2A /* Memo.swift in Sources */,
+				6611F3072A6BF13500555EE0 /* OpenMemo.swift in Sources */,
 				660B57FB2A673C9200793C2A /* MemoStore.swift in Sources */,
 				66DD33E72A674BA50080A9F2 /* ComposeView.swift in Sources */,
+				6611F3032A695CF900555EE0 /* OpenApp.swift in Sources */,
 				660B57E32A65447D00793C2A /* Persistence.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,12 +351,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				66DD34132A677E3D0080A9F2 /* DetailView.swift in Sources */,
-				66DD34072A677C950080A9F2 /* MemoStoreW.swift in Sources */,
+				66DD34072A677C950080A9F2 /* MemoStore.swift in Sources */,
 				66DD33F12A677B910080A9F2 /* MemoWithWatchWatchApp.swift in Sources */,
+				6611F3042A695E6E00555EE0 /* OpenApp.swift in Sources */,
 				66DD340B2A677D050080A9F2 /* MainView.swift in Sources */,
 				66DD340F2A677D7F0080A9F2 /* MemoListView.swift in Sources */,
-				66DD34052A677C6B0080A9F2 /* MemoW.swift in Sources */,
+				66DD34052A677C6B0080A9F2 /* Memo.swift in Sources */,
 				66DD340D2A677D720080A9F2 /* MemoRecordView.swift in Sources */,
+				6611F3082A6C017C00555EE0 /* OpenMemo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +423,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -444,6 +476,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -480,13 +513,15 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.apple.MemoWithWatch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ADA.MemoWithWatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -519,13 +554,15 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.apple.MemoWithWatch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ADA.MemoWithWatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -542,13 +579,13 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = MemoWithWatchWatch;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.apple.MemoWithWatch;
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.ADA.MemoWithWatch;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.apple.MemoWithWatch.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ADA.MemoWithWatch.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -572,13 +609,13 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = MemoWithWatchWatch;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.apple.MemoWithWatch;
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.ADA.MemoWithWatch;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.apple.MemoWithWatch.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ADA.MemoWithWatch.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
