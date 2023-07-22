@@ -19,6 +19,7 @@
 		6611F3042A695E6E00555EE0 /* OpenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6611F2FC2A69560E00555EE0 /* OpenApp.swift */; };
 		6611F3072A6BF13500555EE0 /* OpenMemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6611F3062A6BF13500555EE0 /* OpenMemo.swift */; };
 		6611F3082A6C017C00555EE0 /* OpenMemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6611F3062A6BF13500555EE0 /* OpenMemo.swift */; };
+		663B686B2A6C246B001A6A62 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663B686A2A6C246B001A6A62 /* ExtensionDelegate.swift */; };
 		66DD33E72A674BA50080A9F2 /* ComposeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DD33E62A674BA50080A9F2 /* ComposeView.swift */; };
 		66DD33E92A67518E0080A9F2 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DD33E82A67518E0080A9F2 /* DetailView.swift */; };
 		66DD33F12A677B910080A9F2 /* MemoWithWatchWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DD33F02A677B910080A9F2 /* MemoWithWatchWatchApp.swift */; };
@@ -80,6 +81,7 @@
 		660B57FA2A673C9200793C2A /* MemoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoStore.swift; sourceTree = "<group>"; };
 		6611F2FC2A69560E00555EE0 /* OpenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenApp.swift; sourceTree = "<group>"; };
 		6611F3062A6BF13500555EE0 /* OpenMemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenMemo.swift; sourceTree = "<group>"; };
+		663B686A2A6C246B001A6A62 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		66DD33E62A674BA50080A9F2 /* ComposeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeView.swift; sourceTree = "<group>"; };
 		66DD33E82A67518E0080A9F2 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		66DD33EE2A677B910080A9F2 /* MemoWithWatchWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MemoWithWatchWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -180,6 +182,13 @@
 			path = AppIntent;
 			sourceTree = "<group>";
 		};
+		663B686E2A6C2A71001A6A62 /* Singletone */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Singletone;
+			sourceTree = "<group>";
+		};
 		66DD33E52A674B8D0080A9F2 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +202,7 @@
 		66DD33EF2A677B910080A9F2 /* MemoWithWatchWatch Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				663B686E2A6C2A71001A6A62 /* Singletone */,
 				66DD34092A677CEE0080A9F2 /* Memory */,
 				66DD34082A677CE10080A9F2 /* View */,
 				66DD33F02A677B910080A9F2 /* MemoWithWatchWatchApp.swift */,
@@ -226,6 +236,7 @@
 			children = (
 				66DD34042A677C6B0080A9F2 /* Memo.swift */,
 				66DD34062A677C950080A9F2 /* MemoStore.swift */,
+				663B686A2A6C246B001A6A62 /* ExtensionDelegate.swift */,
 			);
 			path = Memory;
 			sourceTree = "<group>";
@@ -350,6 +361,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				663B686B2A6C246B001A6A62 /* ExtensionDelegate.swift in Sources */,
 				66DD34132A677E3D0080A9F2 /* DetailView.swift in Sources */,
 				66DD34072A677C950080A9F2 /* MemoStore.swift in Sources */,
 				66DD33F12A677B910080A9F2 /* MemoWithWatchWatchApp.swift in Sources */,

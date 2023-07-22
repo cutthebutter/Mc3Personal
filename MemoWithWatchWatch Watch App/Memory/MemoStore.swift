@@ -61,6 +61,8 @@ class MemoStore : NSObject, WCSessionDelegate, ObservableObject {
     
     
     
+    
+    
 
     
 }

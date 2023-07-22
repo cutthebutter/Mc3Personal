@@ -6,10 +6,12 @@
 //
 
 import SwiftUI
+import WatchKit
 
 @main
 struct MemoWithWatchWatch_Watch_AppApp: App {
     @StateObject var store = MemoStore()
+
     var body: some Scene {
         WindowGroup {
             MainView()
@@ -17,3 +19,5 @@ struct MemoWithWatchWatch_Watch_AppApp: App {
         }
     }
 }
+
+

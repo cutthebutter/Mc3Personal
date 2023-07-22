@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import WatchKit
 
 struct MemoRecordView: View {
     @EnvironmentObject var store : MemoStore
@@ -44,6 +45,8 @@ struct MemoRecordView: View {
     
     
     func presentDictation() {
+        let hapticType = WKHapticType.notification
+        WKInterfaceDevice.current().play(hapticType)
         let root = WKExtension.shared().rootInterfaceController
         root?.presentTextInputController(withSuggestions: nil, allowedInputMode: .plain) { result in
             if let result = result as? [String], !result.isEmpty {
@@ -66,6 +69,7 @@ struct MemoRecordView: View {
             root?.dismissTextInputController()
         }
     }
+    
     
 }
 struct MemoRecordView_Previews: PreviewProvider {
