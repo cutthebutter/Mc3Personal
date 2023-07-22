@@ -45,7 +45,7 @@ struct MemoRecordView: View {
     
     
     func presentDictation() {
-        let hapticType = WKHapticType.notification
+        let hapticType = WKHapticType.start
         WKInterfaceDevice.current().play(hapticType)
         let root = WKExtension.shared().rootInterfaceController
         root?.presentTextInputController(withSuggestions: nil, allowedInputMode: .plain) { result in

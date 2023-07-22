@@ -15,10 +15,16 @@
 		660B57F52A673BC400793C2A /* MainListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660B57F42A673BC400793C2A /* MainListView.swift */; };
 		660B57F92A673C2600793C2A /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660B57F82A673C2600793C2A /* Memo.swift */; };
 		660B57FB2A673C9200793C2A /* MemoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660B57FA2A673C9200793C2A /* MemoStore.swift */; };
-		6611F3032A695CF900555EE0 /* OpenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6611F2FC2A69560E00555EE0 /* OpenApp.swift */; };
-		6611F3042A695E6E00555EE0 /* OpenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6611F2FC2A69560E00555EE0 /* OpenApp.swift */; };
 		6611F3072A6BF13500555EE0 /* OpenMemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6611F3062A6BF13500555EE0 /* OpenMemo.swift */; };
 		6611F3082A6C017C00555EE0 /* OpenMemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6611F3062A6BF13500555EE0 /* OpenMemo.swift */; };
+		662CE8A62A6C37C20067B968 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 662CE8A52A6C37C20067B968 /* WidgetKit.framework */; };
+		662CE8A82A6C37C20067B968 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 662CE8A72A6C37C20067B968 /* SwiftUI.framework */; };
+		662CE8AB2A6C37C20067B968 /* LockScreenWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662CE8AA2A6C37C20067B968 /* LockScreenWidgetBundle.swift */; };
+		662CE8AF2A6C37C20067B968 /* LockScreenWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662CE8AE2A6C37C20067B968 /* LockScreenWidget.swift */; };
+		662CE8B22A6C37C30067B968 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 662CE8B12A6C37C30067B968 /* Assets.xcassets */; };
+		662CE8B42A6C37C30067B968 /* LockScreenWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 662CE8B02A6C37C20067B968 /* LockScreenWidget.intentdefinition */; };
+		662CE8B52A6C37C30067B968 /* LockScreenWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 662CE8B02A6C37C20067B968 /* LockScreenWidget.intentdefinition */; };
+		662CE8B82A6C37C30067B968 /* LockScreenWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 662CE8A32A6C37C20067B968 /* LockScreenWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		663B686B2A6C246B001A6A62 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663B686A2A6C246B001A6A62 /* ExtensionDelegate.swift */; };
 		66DD33E72A674BA50080A9F2 /* ComposeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DD33E62A674BA50080A9F2 /* ComposeView.swift */; };
 		66DD33E92A67518E0080A9F2 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DD33E82A67518E0080A9F2 /* DetailView.swift */; };
@@ -35,6 +41,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		662CE8B62A6C37C30067B968 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 660B57D52A65447D00793C2A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 662CE8A22A6C37C20067B968;
+			remoteInfo = LockScreenWidgetExtension;
+		};
 		66DD33F92A677B920080A9F2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 660B57D52A65447D00793C2A /* Project object */;
@@ -53,6 +66,17 @@
 			files = (
 			);
 			name = "Embed ExtensionKit Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		662CE8BC2A6C37C30067B968 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				662CE8B82A6C37C30067B968 /* LockScreenWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		66DD33FF2A677B920080A9F2 /* Embed Watch Content */ = {
@@ -79,8 +103,15 @@
 		660B57F42A673BC400793C2A /* MainListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListView.swift; sourceTree = "<group>"; };
 		660B57F82A673C2600793C2A /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
 		660B57FA2A673C9200793C2A /* MemoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoStore.swift; sourceTree = "<group>"; };
-		6611F2FC2A69560E00555EE0 /* OpenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenApp.swift; sourceTree = "<group>"; };
 		6611F3062A6BF13500555EE0 /* OpenMemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenMemo.swift; sourceTree = "<group>"; };
+		662CE8A32A6C37C20067B968 /* LockScreenWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LockScreenWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		662CE8A52A6C37C20067B968 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		662CE8A72A6C37C20067B968 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		662CE8AA2A6C37C20067B968 /* LockScreenWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockScreenWidgetBundle.swift; sourceTree = "<group>"; };
+		662CE8AE2A6C37C20067B968 /* LockScreenWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockScreenWidget.swift; sourceTree = "<group>"; };
+		662CE8B02A6C37C20067B968 /* LockScreenWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = LockScreenWidget.intentdefinition; sourceTree = "<group>"; };
+		662CE8B12A6C37C30067B968 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		662CE8B32A6C37C30067B968 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		663B686A2A6C246B001A6A62 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		66DD33E62A674BA50080A9F2 /* ComposeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeView.swift; sourceTree = "<group>"; };
 		66DD33E82A67518E0080A9F2 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
@@ -104,6 +135,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		662CE8A02A6C37C20067B968 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				662CE8A82A6C37C20067B968 /* SwiftUI.framework in Frameworks */,
+				662CE8A62A6C37C20067B968 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		66DD33EB2A677B910080A9F2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -119,6 +159,8 @@
 			children = (
 				660B57DF2A65447D00793C2A /* MemoWithWatch */,
 				66DD33EF2A677B910080A9F2 /* MemoWithWatchWatch Watch App */,
+				662CE8A92A6C37C20067B968 /* LockScreenWidget */,
+				662CE8A42A6C37C20067B968 /* Frameworks */,
 				660B57DE2A65447D00793C2A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -128,6 +170,7 @@
 			children = (
 				660B57DD2A65447D00793C2A /* MemoWithWatch.app */,
 				66DD33EE2A677B910080A9F2 /* MemoWithWatchWatch Watch App.app */,
+				662CE8A32A6C37C20067B968 /* LockScreenWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -151,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				660B57ED2A65447F00793C2A /* Preview Assets.xcassets */,
+				663B686E2A6C2A71001A6A62 /* Singletone */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -176,10 +220,30 @@
 		6611F3052A6961FA00555EE0 /* AppIntent */ = {
 			isa = PBXGroup;
 			children = (
-				6611F2FC2A69560E00555EE0 /* OpenApp.swift */,
 				6611F3062A6BF13500555EE0 /* OpenMemo.swift */,
 			);
 			path = AppIntent;
+			sourceTree = "<group>";
+		};
+		662CE8A42A6C37C20067B968 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				662CE8A52A6C37C20067B968 /* WidgetKit.framework */,
+				662CE8A72A6C37C20067B968 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		662CE8A92A6C37C20067B968 /* LockScreenWidget */ = {
+			isa = PBXGroup;
+			children = (
+				662CE8AA2A6C37C20067B968 /* LockScreenWidgetBundle.swift */,
+				662CE8AE2A6C37C20067B968 /* LockScreenWidget.swift */,
+				662CE8B02A6C37C20067B968 /* LockScreenWidget.intentdefinition */,
+				662CE8B12A6C37C30067B968 /* Assets.xcassets */,
+				662CE8B32A6C37C30067B968 /* Info.plist */,
+			);
+			path = LockScreenWidget;
 			sourceTree = "<group>";
 		};
 		663B686E2A6C2A71001A6A62 /* Singletone */ = {
@@ -202,7 +266,6 @@
 		66DD33EF2A677B910080A9F2 /* MemoWithWatchWatch Watch App */ = {
 			isa = PBXGroup;
 			children = (
-				663B686E2A6C2A71001A6A62 /* Singletone */,
 				66DD34092A677CEE0080A9F2 /* Memory */,
 				66DD34082A677CE10080A9F2 /* View */,
 				66DD33F02A677B910080A9F2 /* MemoWithWatchWatchApp.swift */,
@@ -253,16 +316,35 @@
 				660B57DB2A65447D00793C2A /* Resources */,
 				66DD33FF2A677B920080A9F2 /* Embed Watch Content */,
 				6611F2F22A69082E00555EE0 /* Embed ExtensionKit Extensions */,
+				662CE8BC2A6C37C30067B968 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				66DD33FA2A677B920080A9F2 /* PBXTargetDependency */,
+				662CE8B72A6C37C30067B968 /* PBXTargetDependency */,
 			);
 			name = MemoWithWatch;
 			productName = MemoWithWatch;
 			productReference = 660B57DD2A65447D00793C2A /* MemoWithWatch.app */;
 			productType = "com.apple.product-type.application";
+		};
+		662CE8A22A6C37C20067B968 /* LockScreenWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 662CE8B92A6C37C30067B968 /* Build configuration list for PBXNativeTarget "LockScreenWidgetExtension" */;
+			buildPhases = (
+				662CE89F2A6C37C20067B968 /* Sources */,
+				662CE8A02A6C37C20067B968 /* Frameworks */,
+				662CE8A12A6C37C20067B968 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LockScreenWidgetExtension;
+			productName = LockScreenWidgetExtension;
+			productReference = 662CE8A32A6C37C20067B968 /* LockScreenWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 		66DD33ED2A677B910080A9F2 /* MemoWithWatchWatch Watch App */ = {
 			isa = PBXNativeTarget;
@@ -294,6 +376,9 @@
 					660B57DC2A65447D00793C2A = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
+					662CE8A22A6C37C20067B968 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
 					66DD33ED2A677B910080A9F2 = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
@@ -314,6 +399,7 @@
 			targets = (
 				660B57DC2A65447D00793C2A /* MemoWithWatch */,
 				66DD33ED2A677B910080A9F2 /* MemoWithWatchWatch Watch App */,
+				662CE8A22A6C37C20067B968 /* LockScreenWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -325,6 +411,14 @@
 			files = (
 				660B57EE2A65447F00793C2A /* Preview Assets.xcassets in Resources */,
 				660B57EA2A65447F00793C2A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		662CE8A12A6C37C20067B968 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				662CE8B22A6C37C30067B968 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +439,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				660B57F52A673BC400793C2A /* MainListView.swift in Sources */,
+				662CE8B52A6C37C30067B968 /* LockScreenWidget.intentdefinition in Sources */,
 				66DD33E92A67518E0080A9F2 /* DetailView.swift in Sources */,
 				660B57E12A65447D00793C2A /* MemoWithWatchApp.swift in Sources */,
 				660B57E62A65447D00793C2A /* MemoWithWatch.xcdatamodeld in Sources */,
@@ -352,8 +447,17 @@
 				6611F3072A6BF13500555EE0 /* OpenMemo.swift in Sources */,
 				660B57FB2A673C9200793C2A /* MemoStore.swift in Sources */,
 				66DD33E72A674BA50080A9F2 /* ComposeView.swift in Sources */,
-				6611F3032A695CF900555EE0 /* OpenApp.swift in Sources */,
 				660B57E32A65447D00793C2A /* Persistence.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		662CE89F2A6C37C20067B968 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				662CE8AB2A6C37C20067B968 /* LockScreenWidgetBundle.swift in Sources */,
+				662CE8B42A6C37C30067B968 /* LockScreenWidget.intentdefinition in Sources */,
+				662CE8AF2A6C37C20067B968 /* LockScreenWidget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,7 +469,6 @@
 				66DD34132A677E3D0080A9F2 /* DetailView.swift in Sources */,
 				66DD34072A677C950080A9F2 /* MemoStore.swift in Sources */,
 				66DD33F12A677B910080A9F2 /* MemoWithWatchWatchApp.swift in Sources */,
-				6611F3042A695E6E00555EE0 /* OpenApp.swift in Sources */,
 				66DD340B2A677D050080A9F2 /* MainView.swift in Sources */,
 				66DD340F2A677D7F0080A9F2 /* MemoListView.swift in Sources */,
 				66DD34052A677C6B0080A9F2 /* Memo.swift in Sources */,
@@ -377,6 +480,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		662CE8B72A6C37C30067B968 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 662CE8A22A6C37C20067B968 /* LockScreenWidgetExtension */;
+			targetProxy = 662CE8B62A6C37C30067B968 /* PBXContainerItemProxy */;
+		};
 		66DD33FA2A677B920080A9F2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 66DD33ED2A677B910080A9F2 /* MemoWithWatchWatch Watch App */;
@@ -578,6 +686,65 @@
 			};
 			name = Release;
 		};
+		662CE8BA2A6C37C30067B968 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 386W4DPD42;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LockScreenWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LockScreenWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ADA.MemoWithWatch.LockScreenWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		662CE8BB2A6C37C30067B968 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 386W4DPD42;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LockScreenWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LockScreenWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ADA.MemoWithWatch.LockScreenWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		66DD33FD2A677B920080A9F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -656,6 +823,15 @@
 			buildConfigurations = (
 				660B57F22A65447F00793C2A /* Debug */,
 				660B57F32A65447F00793C2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		662CE8B92A6C37C30067B968 /* Build configuration list for PBXNativeTarget "LockScreenWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				662CE8BA2A6C37C30067B968 /* Debug */,
+				662CE8BB2A6C37C30067B968 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
