@@ -12,30 +12,52 @@ struct MemoRecordView: View {
     @EnvironmentObject var store : MemoStore
     @State private var content : String = ""
     @State var wathchToiOSMemo : [String : Any] = ["a" : "b"]
+    @State private var selectedCategory : String?
+    @State private var showVoiceRecordView = false
+    @State private var stt : String = "None"
+    @State private var count = 0
     
     var body: some View {
         NavigationView{
-            VStack {
-                Button {
-                    presentDictation()
-                } label: {
-                    Image(systemName: "mic.fill")
-                        .font(.title)
-                        .padding(15)
-                        .background(Color.gray)
-                        .mask(Circle())
+            ZStack{
+                VStack {
+                    Button {
+                        presentDictation()
+                    } label: {
+                        Image(systemName: "mic.fill")
+                            .font(.title)
+                            .padding(15)
+                            .background(Color.gray)
+                            .mask(Circle())
+                        
+                    }
+                    .buttonStyle(PlainButtonStyle())
                     
+                    Text("기록시작")
                 }
-                .buttonStyle(PlainButtonStyle())
-                
-                Text("기록시작")
             }
-            .navigationTitle("Memo")
+  
+            .navigationTitle("사건록")
             .navigationBarTitleDisplayMode(.inline)
-            .onAppear(perform: {
-                presentDictation()
-                
-            })
+            .onAppear{
+                if count == 0 {
+                    presentDictation()
+                    count += 1
+                }
+            }
+
+            .sheet(isPresented: $showVoiceRecordView) {
+                VoiceRecordView(selectedCategory: $selectedCategory)
+                    .onDisappear {
+
+                        if let category = selectedCategory{
+                            let memo = Memo(category: category, content: stt)
+                            saveMemo(memo)
+                        }
+                    }
+            }
+
+            
         }
         
         
@@ -51,31 +73,31 @@ struct MemoRecordView: View {
         root?.presentTextInputController(withSuggestions: nil, allowedInputMode: .plain) { result in
             if let result = result as? [String], !result.isEmpty {
                 let result0 = result[0].replacingOccurrences(of: " ", with: "")
-                if result0 != ""{
-                    let memo = Memo(content: result[0])
-                    store.memoList.insert(memo, at: 0)
-                    wathchToiOSMemo = ["id" : memo.id.uuidString,
-                                       "category" : memo.category,
-                                           "content" : memo.content,
-                                           "insertDate" : Int(memo.insertDate.timeIntervalSince1970)] as [String : Any]
-                    print("Sending message: \(wathchToiOSMemo)")
-                    self.store.session.sendMessage(["watchToIOS": wathchToiOSMemo], replyHandler: nil) {(error) in
-                        print(error.localizedDescription)
-                    }
+                if result0 != "" {
+                    stt = result0
+                    showVoiceRecordView = true
                 }
-                
-                
             }else {return}
-            
             root?.dismissTextInputController()
         }
     }
     
+    func saveMemo(_ memo: Memo) {
+        store.memoList.insert(memo, at: 0)
+        wathchToiOSMemo = ["id" : memo.id.uuidString,
+                           "category" : memo.category,
+                           "content" : memo.content,
+                           "insertDate" : Int(memo.insertDate.timeIntervalSince1970)] as [String : Any]
+        print("Sending message: \(wathchToiOSMemo)")
+        self.store.session.sendMessage(["watchToIOS": wathchToiOSMemo], replyHandler: nil) {(error) in
+            print(error.localizedDescription)
+        }
+    }
     
 }
-struct MemoRecordView_Previews: PreviewProvider {
-    static var previews: some View {
-        MemoRecordView()
-            .environmentObject(MemoStore())
-    }
-}
+//struct MemoRecordView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        MemoRecordView()
+//            .environmentObject(store)
+//    }
+//}

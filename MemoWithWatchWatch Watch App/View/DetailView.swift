@@ -9,9 +9,18 @@ import SwiftUI
 
 struct DetailView: View {
     @EnvironmentObject var store : MemoStore
-    @ObservedObject var memo : Memo
+    @State var memo : Memo
+    
+    let dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yy.MM.dd HH:mm"
+        return formatter
+    }()
+    
+    
     var body: some View {
         VStack{
+            Text(memo.category)
             ScrollView{
                 HStack{
                     Text(memo.content)
@@ -26,15 +35,16 @@ struct DetailView: View {
 
             HStack{
                 Spacer()
-                Text(memo.insertDate, style: .date)
+                Text(dateFormatter.string(from: memo.insertDate))
             }
         }
         
     }
+
 }
-struct DetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        DetailView(memo: Memo(content: "hi"))
-            .environmentObject(MemoStore())
-    }
-}
+//struct DetailView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        DetailView(memo: Memo(content: "hi"))
+//            .environmentObject(MemoStore())
+//    }
+//}
