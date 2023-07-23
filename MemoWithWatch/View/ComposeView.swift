@@ -73,7 +73,7 @@ struct ComposeView: View {
                             print("Sending message: \(iOStoWatchMemo)")
                             self.store.session.sendMessage(["iOSToWatch": iOStoWatchMemo], replyHandler: nil) {(error) in
                                 print(error.localizedDescription)
-                                self.store.session.transferUserInfo(["iOSToWatch": iOStoWatchMemo])
+                                self.store.session.transferUserInfo(["iOSToWatch": iOStoWatchMemo]) 
                             }
                             dismiss()
                             
