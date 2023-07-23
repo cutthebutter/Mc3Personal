@@ -13,7 +13,6 @@ class MemoStore : NSObject, WCSessionDelegate, ObservableObject {
     
     static let shared = MemoStore()
     @Published var path : [Memo] = []
-    @Published var sortedCategories : [String]
     
     func navigateToMain() {
         path = []
@@ -35,14 +34,19 @@ class MemoStore : NSObject, WCSessionDelegate, ObservableObject {
         super.init()
         self.session.delegate = self
         session.activate()
-        updateCategories()
-        sortedCategories = []
     }
     
-    func updateCategories() {
-        let categories = Set(memoList.map { $0.category })
-        sortedCategories = Array(categories).sorted()
+//    func updateCategories() {
+//        let categories = Set(memoList.map { $0.category })
+//        sortedCategories = Array(categories).sorted()
+//        }
+    
+    var sortedCategories : [String] {
+        get {
+            var categories = Set(memoList.map { $0.category })
+            return Array(categories).sorted()
         }
+    }
     
 
 
