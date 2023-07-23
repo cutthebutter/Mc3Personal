@@ -7,14 +7,16 @@
 
 import Foundation
 
-class MemoW : Identifiable,ObservableObject,Codable {
+class Memo : Identifiable,ObservableObject,Codable {
     let id : UUID
     let content : String
     let insertDate : Date
+    let category : String
     
-    init(id : UUID = UUID(), content:String, insertDate : Date = Date.now){
+    init(id : UUID = UUID(), category : String = "None", content:String, insertDate : Date = Date.now){
         self.id = id
         self.content = content
         self.insertDate = insertDate
+        self.category = category
     }
 }
