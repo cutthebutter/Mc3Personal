@@ -47,7 +47,7 @@ struct MemoRecordView: View {
             }
 
             .sheet(isPresented: $showVoiceRecordView) {
-                VoiceRecordView(selectedCategory: $selectedCategory)
+                CategorySelectView(selectedCategory: $selectedCategory)
                     .onDisappear {
 
                         if let category = selectedCategory{
@@ -91,6 +91,7 @@ struct MemoRecordView: View {
         print("Sending message: \(wathchToiOSMemo)")
         self.store.session.sendMessage(["watchToIOS": wathchToiOSMemo], replyHandler: nil) {(error) in
             print(error.localizedDescription)
+            self.store.session.transferUserInfo(["watchToIOS": wathchToiOSMemo])
         }
     }
     

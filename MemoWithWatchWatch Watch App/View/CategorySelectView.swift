@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct VoiceRecordView: View {
+struct CategorySelectView: View {
     @EnvironmentObject var store : MemoStore
     @State var sortedCategories: [String] = []
     @State private var stt : String? = nil
