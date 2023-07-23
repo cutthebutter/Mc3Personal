@@ -13,6 +13,7 @@ class MemoStore : NSObject, WCSessionDelegate, ObservableObject {
     
     static let shared = MemoStore()
     @Published var path : [Memo] = []
+    @Published var sortedCategories : [String]
     
     func navigateToMain() {
         path = []
@@ -20,6 +21,7 @@ class MemoStore : NSObject, WCSessionDelegate, ObservableObject {
     
     var recieveMemo : [String : Any]
     @Published var memoList: [Memo]
+    
     var session : WCSession
     
     init(session:WCSession = .default){
@@ -33,12 +35,19 @@ class MemoStore : NSObject, WCSessionDelegate, ObservableObject {
         super.init()
         self.session.delegate = self
         session.activate()
-        
-
+        updateCategories()
+        sortedCategories = []
     }
+    
+    func updateCategories() {
+        let categories = Set(memoList.map { $0.category })
+        sortedCategories = Array(categories).sorted()
+        }
+    
 
-    func insert(memo: String) {
-        memoList.insert(Memo(content: memo), at : 0)
+
+    func insert(content: String, category : String) {
+        memoList.insert(Memo(category : category, content: content), at : 0)
     }
     
     func session(_ session : WCSession, activationDidCompleteWith activationState : WCSessionActivationState, error : Error?){
@@ -48,9 +57,10 @@ class MemoStore : NSObject, WCSessionDelegate, ObservableObject {
     func session(_ session : WCSession, didReceiveMessage message : [String:Any]){
         DispatchQueue.main.async {
             print("Received message: \(message)")
-            self.recieveMemo = message["iOSToWatch"] as? [String:Any] ?? ["id": UUID().uuidString, "content" : "nullContents2", "insertDate" : Int(Date().timeIntervalSince1970)]
+            self.recieveMemo = message["iOSToWatch"] as? [String:Any] ?? ["id": UUID().uuidString, "category": "nullCategory", "content" : "nullContents2", "insertDate" : Int(Date().timeIntervalSince1970)]
             let newMemo = Memo(id : UUID(uuidString: self.recieveMemo["id"] as! String)!,
-                                content: self.recieveMemo["content"] as! String,
+                               category: self.recieveMemo["category"] as! String,
+                               content: self.recieveMemo["content"] as! String,
                                 insertDate: Date(timeIntervalSince1970: Double(self.recieveMemo["insertDate"] as! Int)))
             print("Adding memo: \(newMemo)")
             self.memoList.insert(newMemo, at :0)

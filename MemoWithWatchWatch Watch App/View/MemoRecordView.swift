@@ -55,6 +55,7 @@ struct MemoRecordView: View {
                     let memo = Memo(content: result[0])
                     store.memoList.insert(memo, at: 0)
                     wathchToiOSMemo = ["id" : memo.id.uuidString,
+                                       "category" : memo.category,
                                            "content" : memo.content,
                                            "insertDate" : Int(memo.insertDate.timeIntervalSince1970)] as [String : Any]
                     print("Sending message: \(wathchToiOSMemo)")

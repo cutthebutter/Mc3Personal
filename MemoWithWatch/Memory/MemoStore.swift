@@ -28,7 +28,7 @@ class MemoStore : NSObject, WCSessionDelegate,ObservableObject {
         Memo(content: "Hello2")]
         
         self.session = session
-        self.recieveMemo = ["id": UUID().uuidString, "content" : "nullContents", "insertDate" : Int(Date().timeIntervalSince1970)]
+        self.recieveMemo = ["id": UUID().uuidString, "category" : "nullCategory", "content" : "nullContents", "insertDate" : Int(Date().timeIntervalSince1970)]
         super.init()
         self.session.delegate = self
         session.activate()
@@ -36,8 +36,8 @@ class MemoStore : NSObject, WCSessionDelegate,ObservableObject {
 
     }
     
-    func insert(memo:String) {
-        list.insert(Memo(content: memo), at :0)
+    func insert(category : String ,content:String) {
+        list.insert(Memo(category : category, content: content), at :0)
     }
     
     func update(memo:Memo?, content:String) {
@@ -68,8 +68,9 @@ class MemoStore : NSObject, WCSessionDelegate,ObservableObject {
     func session(_ session : WCSession, didReceiveMessage message : [String:Any]){
         DispatchQueue.main.async {
             print("Received message: \(message)")
-            self.recieveMemo = message["watchToIOS"] as? [String:Any] ?? ["id": UUID().uuidString, "content" : "nullContents", "insertDate" : Int(Date().timeIntervalSince1970)]
+            self.recieveMemo = message["watchToIOS"] as? [String:Any] ?? ["id": UUID().uuidString, "category" : "nullCategory", "content" : "nullContents", "insertDate" : Int(Date().timeIntervalSince1970)]
             let newMemo = Memo(id : UUID(uuidString: self.recieveMemo["id"] as! String)!,
+                               category: self.recieveMemo["category"] as! String,
                                content: self.recieveMemo["content"] as! String,
                                insertDate: Date(timeIntervalSince1970: Double(self.recieveMemo["insertDate"] as! Int)))
             print("Adding memo: \(newMemo)")

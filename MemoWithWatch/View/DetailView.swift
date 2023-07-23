@@ -16,13 +16,16 @@ struct DetailView: View {
         VStack{
             ScrollView{
                 VStack{
+                    Text("category")
+                    Text(memo.category)
+                    Text("content")
                     HStack {
                         Text(memo.content)
                             .padding()
                         Spacer()
                     }
                     Text(memo.insertDate,style: .date)
-                }
+                }.padding()
             }
             
         }

@@ -25,7 +25,7 @@
 		662CE8B42A6C37C30067B968 /* LockScreenWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 662CE8B02A6C37C20067B968 /* LockScreenWidget.intentdefinition */; };
 		662CE8B52A6C37C30067B968 /* LockScreenWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 662CE8B02A6C37C20067B968 /* LockScreenWidget.intentdefinition */; };
 		662CE8B82A6C37C30067B968 /* LockScreenWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 662CE8A32A6C37C20067B968 /* LockScreenWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		663B686B2A6C246B001A6A62 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663B686A2A6C246B001A6A62 /* ExtensionDelegate.swift */; };
+		662CE8C22A6C766C0067B968 /* CategorySelectFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662CE8C12A6C766C0067B968 /* CategorySelectFile.swift */; };
 		66DD33E72A674BA50080A9F2 /* ComposeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DD33E62A674BA50080A9F2 /* ComposeView.swift */; };
 		66DD33E92A67518E0080A9F2 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DD33E82A67518E0080A9F2 /* DetailView.swift */; };
 		66DD33F12A677B910080A9F2 /* MemoWithWatchWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DD33F02A677B910080A9F2 /* MemoWithWatchWatchApp.swift */; };
@@ -112,7 +112,7 @@
 		662CE8B02A6C37C20067B968 /* LockScreenWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = LockScreenWidget.intentdefinition; sourceTree = "<group>"; };
 		662CE8B12A6C37C30067B968 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		662CE8B32A6C37C30067B968 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		663B686A2A6C246B001A6A62 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		662CE8C12A6C766C0067B968 /* CategorySelectFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorySelectFile.swift; sourceTree = "<group>"; };
 		66DD33E62A674BA50080A9F2 /* ComposeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeView.swift; sourceTree = "<group>"; };
 		66DD33E82A67518E0080A9F2 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		66DD33EE2A677B910080A9F2 /* MemoWithWatchWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MemoWithWatchWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -290,6 +290,7 @@
 				66DD340C2A677D720080A9F2 /* MemoRecordView.swift */,
 				66DD340E2A677D7F0080A9F2 /* MemoListView.swift */,
 				66DD34122A677E3D0080A9F2 /* DetailView.swift */,
+				662CE8C12A6C766C0067B968 /* CategorySelectFile.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -299,7 +300,6 @@
 			children = (
 				66DD34042A677C6B0080A9F2 /* Memo.swift */,
 				66DD34062A677C950080A9F2 /* MemoStore.swift */,
-				663B686A2A6C246B001A6A62 /* ExtensionDelegate.swift */,
 			);
 			path = Memory;
 			sourceTree = "<group>";
@@ -465,12 +465,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				663B686B2A6C246B001A6A62 /* ExtensionDelegate.swift in Sources */,
 				66DD34132A677E3D0080A9F2 /* DetailView.swift in Sources */,
 				66DD34072A677C950080A9F2 /* MemoStore.swift in Sources */,
 				66DD33F12A677B910080A9F2 /* MemoWithWatchWatchApp.swift in Sources */,
 				66DD340B2A677D050080A9F2 /* MainView.swift in Sources */,
 				66DD340F2A677D7F0080A9F2 /* MemoListView.swift in Sources */,
+				662CE8C22A6C766C0067B968 /* CategorySelectFile.swift in Sources */,
 				66DD34052A677C6B0080A9F2 /* Memo.swift in Sources */,
 				66DD340D2A677D720080A9F2 /* MemoRecordView.swift in Sources */,
 				6611F3082A6C017C00555EE0 /* OpenMemo.swift in Sources */,
