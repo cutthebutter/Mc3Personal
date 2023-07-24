@@ -16,6 +16,7 @@ struct MemoRecordView: View {
     @State private var showVoiceRecordView = false
     @State private var stt : String = "None"
     @State private var count = 0
+    @Environment(\.scenePhase) private var scenePhase
     
     var body: some View {
         NavigationView{
@@ -35,31 +36,37 @@ struct MemoRecordView: View {
                     
                     Text("기록시작")
                 }
+                .onChange(of: scenePhase) { (phase) in
+                    switch phase {
+                    case .active :
+                        presentDictation()
+                        
+                    default : break
+                        
+                        
+                    }
+                }
+
             }
-  
+            
             .navigationTitle("사건록")
             .navigationBarTitleDisplayMode(.inline)
-            .onAppear{
-                if count == 0 {
-                    presentDictation()
-                    count += 1
-                }
-            }
-
+            
             .sheet(isPresented: $showVoiceRecordView) {
                 CategorySelectView(selectedCategory: $selectedCategory)
                     .onDisappear {
-
+                        
                         if let category = selectedCategory{
                             let memo = Memo(category: category, content: stt)
                             saveMemo(memo)
                         }
                     }
             }
-
+            
+            
+            
             
         }
-        
         
         
         
