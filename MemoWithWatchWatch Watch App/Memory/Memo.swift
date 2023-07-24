@@ -7,8 +7,8 @@
 
 import Foundation
 
-class Memo : Identifiable,ObservableObject,Codable {
-    let id : UUID
+struct Memo : Identifiable {
+    let id  : UUID
     let content : String
     let insertDate : Date
     let category : String

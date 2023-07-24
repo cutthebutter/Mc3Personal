@@ -65,17 +65,20 @@ struct ComposeView: View {
                         } else{
                             newMemo = Memo(category : category, content: content)
                             self.store.list.insert(newMemo, at : 0)
-                            iOStoWatchMemo = ["id" : newMemo.id.uuidString, "category" : newMemo.category,
-                                                   "content" : newMemo.content,
-                                                   "insertDate" : Int(newMemo.insertDate.timeIntervalSince1970)] as [String : Any]
+                            iOStoWatchMemo = [
+                                "id" : newMemo.id.uuidString,
+                                "category" : newMemo.category,
+                              "content" : newMemo.content,
+                              "insertDate" : Int(newMemo.insertDate.timeIntervalSince1970)] as [String : Any]
                             print("Sending message: \(iOStoWatchMemo)")
                             self.store.session.sendMessage(["iOSToWatch": iOStoWatchMemo], replyHandler: nil) {(error) in
                                 print(error.localizedDescription)
+                                self.store.session.transferUserInfo(["iOSToWatch": iOStoWatchMemo]) 
                             }
                             dismiss()
                             
                         }
-
+                        
                     } label :{
                         Text("저장")
                     }

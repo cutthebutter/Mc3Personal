@@ -10,7 +10,7 @@ import WatchKit
 
 @main
 struct MemoWithWatchWatch_Watch_AppApp: App {
-    @StateObject var store = MemoStore()
+    @StateObject var store = MemoStore.shared
 
     var body: some Scene {
         WindowGroup {

@@ -13,6 +13,7 @@ class MemoStore : NSObject, WCSessionDelegate, ObservableObject {
     
     static let shared = MemoStore()
     @Published var path : [Memo] = []
+
     
     func navigateToMain() {
         path = []
@@ -23,34 +24,33 @@ class MemoStore : NSObject, WCSessionDelegate, ObservableObject {
     
     var session : WCSession
     
-    init(session:WCSession = .default){
+    private init(session:WCSession = .default){
         memoList = [
-            Memo(content: "hi"),
-            Memo(content: "hi2")
+            Memo(content: "hi", insertDate: Date.now - TimeInterval(3600*24)),
+            Memo(content: "hi2",insertDate: Date.now - TimeInterval(3600*48))
         ]
         
         self.session = session
-        self.recieveMemo = ["id": UUID().uuidString, "content" : "nullContents", "insertDate" : Int(Date().timeIntervalSince1970)]
+        self.recieveMemo = ["id": UUID().uuidString, "category" : "nullCategory",  "content" : "nullContents", "insertDate" : Int(Date().timeIntervalSince1970)]
         super.init()
         self.session.delegate = self
         session.activate()
     }
     
-//    func updateCategories() {
-//        let categories = Set(memoList.map { $0.category })
-//        sortedCategories = Array(categories).sorted()
-//        }
-    
-    var sortedCategories : [String] {
-        get {
-            var categories = Set(memoList.map { $0.category })
-            return Array(categories).sorted()
-        }
+    func getSortedCategories() -> [String] {
+        var categories = Set(memoList.map { $0.category })
+        return Array(categories).sorted()
     }
     
+//
+//    var sortedCategories : [String] {
+//        var categories = Set(memoList.map { $0.category })
+//        return Array(categories).sorted()
+//    }
+//
 
 
-    func insert(content: String, category : String) {
+    func insert(category : String, content: String) {
         memoList.insert(Memo(category : category, content: content), at : 0)
     }
     
