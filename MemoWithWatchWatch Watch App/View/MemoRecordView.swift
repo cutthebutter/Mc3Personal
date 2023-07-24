@@ -34,7 +34,7 @@ struct MemoRecordView: View {
                     }
                     .buttonStyle(PlainButtonStyle())
                     
-                    Text("기록시작")
+                    Text("기록시작") 
                 }
                 .onChange(of: scenePhase) { (phase) in
                     switch phase {
